@@ -1,0 +1,73 @@
+<html>
+<header>
+    <link href="Style.css" type="text/css" rel="stylesheet" /> 
+    <link rel="stylesheet" media="screen, print, handheld" type="text/css" href="calendrier.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="planning.css" />
+    <script type="text/javascript" src="formulaire.js"></script>
+    <script type="text/javascript" src="calendrier.js"></script>
+    <script async src="index.js"></script>
+    <title> Diététicienne Nutritionniste </title>
+    <img id="logo" alt="Logo" src="logo2.jpg"/>
+    <p id="bandeau">BIENVENUE</p>
+    <h5 id='date'></h5> 
+    <meta charset="utf-8">
+</header>
+<body> 
+    <ul id="nav"><!--
+	--><li><a href="index.html">Accueil</a></li><!--
+	--><li><a href="Services.html">Services</a></li><!--
+	--><li><a href="Contact.html">Contact</a></li>
+    </ul>
+    <h4>Veuillez compléter le formulaire ci-dessous : </h4>
+    <form class="default-form" id="myForm" action="/ma-page-de-traitement" method="post">
+        <div>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="user_name">
+        </div>
+        <div>
+            <label for="firstname">Prénom :</label>
+            <input type="text" id="firstname" name="user_firstname">
+        </div>
+        <div>
+            <label for="mail">e-mail :</label>
+            <input type="email" id="mail" name="user_mail">
+        </div>
+        <div>
+            <label for="phone">Téléphone :</label>
+            <input type="tel" id="phone" name="user_phone">
+        </div>
+        <label for="select">Objet de la demande:</label>
+        <select class="default-select" name="status-select">
+            <optgroup label="Options">
+            <option value="default" selected hidden>--Choisissez une option--</option>
+            <option value="club">Rendez-Vous</option><!--option 1-->
+            <option value="user">Renseignement</option><!--option 2-->
+            <option value="user">Avis</option><!--option 3-->
+        </optgroup>
+        </select>
+        <div id="register-club-form" class="select-cible"><!-- A afficher si option 1 sélectionnée -->
+            <label for="calendrier">Sélectionnez une date : </label> 
+            <div id="planning" widht=100%></div>
+            <iframe src="PHPpourHTMLplanning.php"></iframe>
+            <!--<script type="text/javascript">
+                calendrier();
+            </script>-->
+        </div>
+        <div id="register-user-form" class="select-cible"><!-- A afficher si option 2 ou 3 sélectionnée -->
+            <label for="msg">Message :</label>
+            <textarea id="msg" name="user_message" maxlength="250"></textarea>
+        </div>
+        <div class="button">
+            <button type="submit">Envoyer le message</button>
+        </div>
+    </form></br>
+</body>
+<footer class="footer">
+    <address>
+        <a href="tel:+33687237928"> (+33) 06.87.23.79.28</a>
+        <a href="mailto:justepatte.hygiediet@gmail.com"> justinepatte.hygiediet@gmail.com</a>
+        <a id="contacts" href="https://www.facebook.com/pg/PatteJustine/services/?ref=page_internal" ><img id="Facebook" alt="" src="ico-facebook.png" widht=30px height=30px/></a>p;
+        <a id="contacts" href="https://fr.linkedin.com/in/justine-patte-b17036148"><img id="LinkedIn" alt="" src="ico-linkedin.png" widht=30px height=30px/></a>
+    </address>
+</footer>
+</html>
