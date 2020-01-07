@@ -117,8 +117,11 @@ font-size: x-large;
 tr,td {
   padding: 5;
   text-align: left;
-  border-style: ridge;
   border-color: rgb(221, 245, 173);
+  border-collapse: separate;
+  column-rule-style: groove;
+  border-style: dotted;
+  vertical-align: middle;
 }
 form {
     /* Uniquement centrer le formulaire sur la page */

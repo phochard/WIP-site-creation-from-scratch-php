@@ -11,19 +11,19 @@
     <form class="default-form" id="myForm" action="insert_into.php" method="POST">
         <div>
             <label for="name">Nom :</label>
-            <input type="tex" name="User_name">
+            <input type="tex" name="User_name" required maxlenght=30>
         </div>
         <div>
             <label for="firstname">Prénom :</label>
-            <input type="text" name="User_firstname">
+            <input type="text" name="User_firstname" required maxlenght=30>
         </div>
         <div>
             <label for="mail">e-mail :</label>
-            <input type="email" name="User_mail">
+            <input type="email" name="User_mail" required maxlenght=30>
         </div>
         <div>
             <label for="phone">Téléphone :</label>
-            <input type="tel" name="User_phone">
+            <input type="tel" name="User_phone" required maxlenght=30>
         </div>
         <label for="select">Objet de la demande:</label>
         <select class="default-select" name="status-select">
