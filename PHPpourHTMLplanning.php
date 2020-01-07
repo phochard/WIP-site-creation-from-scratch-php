@@ -1,7 +1,6 @@
 <html>
 <head>
-  <title>Démo planning dynamique</title>
-  <link rel="stylesheet" type="text/css" media="screen" href="planning.css" />
+<title>Démo planning dynamique</title>
 <body>
 <div id="planning">
 <?php
