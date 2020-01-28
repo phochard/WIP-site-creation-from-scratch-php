@@ -32,6 +32,8 @@
     catch(PDOException $e){
       echo "Erreur : " . $e->getMessage();
     } 
+    header('location:form_merci.php');
+    exit ();
        ?>
     </body>
 </html>
