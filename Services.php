@@ -52,6 +52,17 @@
     </tr>
   </table></br>-->
 <div class="P2">
+  <section class="soins">
+    <h4>Prises en soins :</h2>
+     <ul>
+         <li>Rééquilibrage alimentaire, gestion du poids</li>
+         <li>Pathologies métaboliques (diabète, obésité, dyslipidémie, dénutrition…)</li>
+         <li>Intolérances et allergies alimentaire</li>
+         <li>Pathologies cardio-vasculaires</li>
+         <li>Pathologies digestives (dysphagies, reflux, cancers, MICI, chirurgies, troubles du transit…)</li>
+         <li>Etats physiologiques particuliers (enfants/ados, sportifs, grossesse, allaitement)</li>
+     </ul>   
+  </section>
   <section class="tarif">
   <img src="tarifs.png" alt="Liste des tarifs pratiqués"/>
   </section>

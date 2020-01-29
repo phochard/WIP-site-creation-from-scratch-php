@@ -24,19 +24,17 @@ header {
 #logo {
     height: auto;
     max-width: 100%;
-    margin-left: auto 0;
-    margin-bottom: 10;
     }
 #bandeau {
     text-align: center;
     font-family: Arial;
     font-size: x-large;
     color : black;
-    justify-content: center;
 }
 #date {
     text-align: right;
     margin-top: 0;
+    width:max-content;
  }
 body {
   position: relative;
@@ -87,12 +85,12 @@ body {
   grid-column: 1;
   padding: 30px;
 }
-.soins{
+.com{
   grid-row: 2;
   grid-column: 2;
   margin:auto;
 }
-.soins, .présentation {
+.com, .présentation {
   border: solid 1px;
 }
 .actu {
@@ -145,25 +143,31 @@ tr,td {
 .P2{
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: repeat(2,1fr);
+  grid-template-rows: repeat(3,auto);
   max-height: min-content;
+  gap: 10px;
+}
+.soins{
+  grid-row: 1;
+  grid-column: 2;
+  margin:auto;
 }
 .tarif{
   grid-column: 1;
-  grid-row: 1/ span 2;
+  grid-row: 1/ span 3;
   margin : auto;
 }
 .détail{
   grid-column: 2;
-  grid-row: 1;
+  grid-row: 2;
 }
 .remboursement{
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 3;
 }
-.remboursement, .détail {
+.remboursement, .détail, .soins {
   border: dashed 1px;
-  padding : 50px;
+  padding : 30px;
   margin: auto;
 }
 form {
@@ -171,7 +175,7 @@ form {
     border: 1px solid #CCC;
     border-radius: 1em;
     width: max-content;
-    margin:auto;
+    margin:100px auto 200px;
   }
   form div + div {
     margin-top: 1em;
@@ -233,10 +237,6 @@ form {
     margin-left: .5em;
   }
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   background-image: url(ananas2.jpg);
   background-position: top;
   background-size: auto;
