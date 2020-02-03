@@ -18,9 +18,31 @@ include 'header.php';
     <h4>Commentaire</h2>
     <p>En attente.</p>  
     </section>
-    <section class="actu">
+    <script>
+	document.addEventListener( 'DOMContentLoaded', function () {
+		new Splide( '.splide' ).mount();
+	} );
+    </script>
+    <div class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img id="lien1" src="interventionlievin2.jpg" alt="Atelier diététique cantine scolaire article">
+                </li>
+                <li class="splide__slide">
+                    <img id="lien2" src="interventionslievin.jpg" alt="Atelier diététique cantine scolaire image">
+                </li>
+                <li class="splide__slide">
+                    <img id="lien3" src="préventionHM.png" alt="Alimentation jeune sportif">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--<section class="actu">
+    
     <article>
         <h1>Actualité</h1>
+       
         <article class="article">
             <h2>Décembre 2019</h2>
             <p>Intervention au sein d'une cantine scolaire.</p>
@@ -33,7 +55,7 @@ include 'header.php';
             <img id="lien2" src="préventionHM.png" alt="Alimentation jeune sportif">
         </article>
     </article>
-    </section>
+    </section>-->
     </div>
 </body>
 <?php
