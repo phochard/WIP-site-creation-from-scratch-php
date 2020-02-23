@@ -64,7 +64,8 @@ class Planning {
       echo 'pas == 0 !!';
     }
     $keys = $this->genererMinutesKeys();
-    $tabJour = array_fill_keys($keys, self::htmlEmptyCell);
+    /*$tabJour = array_fill_keys($keys, self::htmlEmptyCell);*/
+  	$tabJour = array_combine($keys,array_fill(0,count($keys),self::htmlEmptyCell));
     return $tabJour;
   }
 
