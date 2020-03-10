@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<body> 
-<?php
+    <?php
     include 'header.php';
     ?>
+<body> 
 <?php
     include 'menu.php';
     ?>
@@ -38,7 +38,7 @@
             <label for="calendrier">Sélectionnez une date : </label> 
             <div id="planning" widht=100%></div>
             <?php
-            include 'Contact/PHPpourHTMLplanning.php';
+            include 'PHPpourHTMLplanning.php';
             ?>
             <!--<script type="text/javascript">
                 calendrier();
@@ -51,9 +51,12 @@
         <div class="button">
             <button type="submit">Envoyer le message</button>
         </div>
-    </form>
-    <?php
+    </form></br>
+    <div  class="bdd">
+    <input type="button" value="Consulter la BDD" onClick="window.location.href='select_from.php'">
+    </div>
+</body>
+<?php
     include 'footer.php';
     ?>
-</body>
 </html>
